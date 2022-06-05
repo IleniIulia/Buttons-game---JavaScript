@@ -4,13 +4,7 @@
   padding: 10px;
 }
 
-.centerdiv {
-  margin: auto;
-  width: 30%;
-  padding: 10px;
-}
-
 .column {
-   width:300px;
-   float:left
+   width: 300px;
+   float: left
 }

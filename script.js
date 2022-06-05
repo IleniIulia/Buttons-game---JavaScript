@@ -4,7 +4,10 @@ function generateButtons() {
   let winner = Math.floor(Math.random() * numberButtons);
   while (numberButtons) {
     $('#listButtons').append(`
-      <button type="submit" class="btn btn-secondary" style="margin:5px" onclick="return randomWinner(` + numberButton + `, ` + winner + `);">Click me</button>`);
+      <button type="submit" class="btn btn-secondary" style="margin:5px"
+      onclick="return checkButton(` + numberButton + `, ` + winner + `);">
+      Click me</button>
+    `);
     --numberButtons;
     ++numberButton;
   }
@@ -12,7 +15,7 @@ function generateButtons() {
   return false;
 }
 
-function randomWinner(id, winner) {
+function checkButton(id, winner) {
   if (id == winner) {
     alert("This button is the winner");
   } else {
